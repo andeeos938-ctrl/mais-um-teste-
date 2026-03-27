@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>to-do avançado</title>
+    <link rel="stlesheet" href="style.css">
+</head>
+
+<body>
+    <div class="conteiner">
+        <h1> minhas tarefas </h1>
+
+        <div class="input-area">
+            <input type="text" id="taskinput" placeholder="Digite uma tarefa...">
+            <select id="priority">
+                <option value="Baixa">Baixa</option>
+                <option value="Média">Média</option>
+                <option value="Alta">Alta</option>
+            </select>
+            <button onclick="addTask()">Adicionar
+            </button>
+        </div>
+
+        <div class="Filters">
+            <button onclick="FilterTasks('all')">todos
+            </button>
+                 <button
+                  onclick="FilterTasks('pending')">pendentes
+                 </button>
+                    <button
+                    onclick="FilterTasks('done')">concluídas </button>
+        </div>
+        <ul id="tasklist"></ul>
+    </div>
+
+    <script src="script.js"></script>
+
+
+
+
+
+</body>
+
+</html>
